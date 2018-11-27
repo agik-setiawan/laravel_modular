@@ -1,0 +1,20 @@
+{
+    "name": "agik/laravel_module",
+    "description": "module laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "agik setiawan",
+            "email": "setiawanagik@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "agik/Module\\": "src/"
+        }
+    },
+    "require":{
+        "php": ">=5.4.0"
+    }
+}
