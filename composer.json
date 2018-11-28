@@ -9,6 +9,7 @@
             "email": "setiawanagik@gmail.com"
         }
     ],
+    "homepage": "https://github.com/agik-setiawan/laravel_modular",
     "autoload": {
         "psr-4": {
             "agik/Module\\": "src/"
