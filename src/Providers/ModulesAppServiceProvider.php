@@ -42,7 +42,7 @@ class ModulesAppServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole()) {
             $this->commands([
-                \agik\Module\Commands\MakeModules::class,
+                \LaravModule\Commands\MakeModules::class,
             ]);
         }
 
