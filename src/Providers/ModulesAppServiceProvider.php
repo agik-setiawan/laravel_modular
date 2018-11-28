@@ -37,8 +37,14 @@ class ModulesAppServiceProvider extends ServiceProvider
 
         $this->publishes(
             [
-                base_path()."/template/src/modules.php" => config_path('modules.php')
+                __DIR__."/../template/src/modules.php" => config_path('modules.php')
             ],'modules');
+
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                \agik\Module\Commands\MakeModules::class,
+            ]);
+        }
 
 
     }

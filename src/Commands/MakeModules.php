@@ -58,7 +58,7 @@ class MakeModules extends Command
 
       if(!file_exists($module_path)){
         if($module_name){
-          $this->smartCopy(base_path()."/template",base_path()."/modules/$module_name");
+          $this->smartCopy(__DIR__."/../template",base_path()."/modules/$module_name");
           $this->info("Module {$module_name} created!");
           $this->createRouteFile();
           $this->createViewFile();
