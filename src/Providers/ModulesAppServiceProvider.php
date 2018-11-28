@@ -1,6 +1,6 @@
 <?php
 
-namespace agik\Module\Providers;
+namespace LaravModule\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Route;

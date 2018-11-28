@@ -1,6 +1,6 @@
 <?php
 
-namespace agik\Module\Commands;
+namespace LaravModule\Commands;
 
 use Illuminate\Console\Command;
 
