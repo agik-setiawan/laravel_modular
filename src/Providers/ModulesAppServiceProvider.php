@@ -37,7 +37,7 @@ class ModulesAppServiceProvider extends ServiceProvider
 
         $this->publishes(
             [
-                __DIR__."/../template/src/modules.php" => config_path('modules.php')
+                __DIR__."/../src/modules.php" => config_path('modules.php')
             ],'modules');
 
         if ($this->app->runningInConsole()) {
